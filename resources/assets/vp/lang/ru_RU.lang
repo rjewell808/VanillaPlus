@@ -1,0 +1,154 @@
+itemGroup.vanillaplusBlocks=VanillaPlus Блоки
+itemGroup.vanillaplusItems=VanillaPlus Предметы
+
+
+tile.obsidian_reinforced.name=Усиленный обсидиан
+ruby_block.name=Рубиновый блок
+sapphire_block.name=Сапфировый блок
+hellstone_block.name=Блок адского камня
+ruby_special_block.name=Резной рубин
+sapphire_special_block.name=Резной сапфир
+hellstone_special_block.name=Резной адский камень
+tile.magma_ore.name=Магмовая руда
+tile.ender_crystal_ore.name=Кристаллическая эндер-руда
+tile.hellfire_ore.name=Руда Адского огня
+tile.compact_gravel.name=Сжатый гравий
+tile.sapphire_ore.name=Сапфировая руда
+tile.ruby_ore.name=Рубиновая руда
+tile.enchanted_ore.name=Чарующая руда
+
+item.magma_chunk.name=Магмовый осколок
+item.enchanted_dust.name=Чарующая пыль
+item.ender_crystal.name=Эндер-кристалл
+item.hell_stone.name=Адский камень
+item.ender_crystal_corrupt.name=Повреждённый эндер-кристалл
+item.ender_gem.name=Эндер-кристалл
+item.enchanted_gem.name=Чарующий кристалл
+item.sapphire.name=Сапфир
+item.head_frag_skeleton.name=Часть скелета
+item.head_frag_zombie.name=Часть зомби
+item.head_frag_creeper.name=Часть крипера
+item.gravel_clump.name=Спрессованный гравий
+item.golden_feather.name=Золотое перо
+item.bloated_ink.name=Наполненный чернильный мешок
+item.air_tank.name=Баллон с воздухом
+item.guardian_ingot.name=Охраняющий слиток
+item.purified_gold.name=Очищенное золото
+item.diamond_rod.name=Алмазный стержень
+item.slime_jelly.name=Слаймовое желе
+
+item.cooked_flesh.name=Приготовленная плоть
+item.seasoned_flesh.name=Поджаренная плоть
+item.toast.name=Поджаренный хлеб
+item.slime_sandwich.name=Слаймовый бутерброд
+item.slime_sandwich_toasted.name=Поджаренный слаймовый бутерброд
+
+item.rapid_bow.name=Быстрый лук
+item.magma_sword.name=Магмовый меч
+item.ink_sword.name=Чернильный меч
+item.air_sword.name=Воздушный меч
+item.bee_sword.name=Пчелиный меч
+
+item.obsidian_sword.name=Обсидиановый меч
+item.obsidian_pickaxe.name=Обсидиановая кирка
+item.obsidian_axe.name=Обсидиановый топор
+item.obsidian_shovel.name=Обсидиановая лопата
+item.obsidian_hoe.name=Обсидиановая мотыга
+item.obsidian_helmet.name=Обсидиановый шлем
+item.obsidian_plate.name=Обсидиановый нагрудник
+item.obsidian_legs.name=Обсидиановые поножи
+item.obsidian_boots.name=Обсидиановые ботинки
+
+item.ruby_sword.name=Рубиновый меч
+item.ruby_pickaxe.name=Рубиновая кирка
+item.ruby_axe.name=Рубиновый топор
+item.ruby_shovel.name=Рубиновая лопата
+item.ruby_hoe.name=Рубиновая мотыга
+item.ruby_helmet.name=Рубиновый шлем
+item.ruby_plate.name=Рубиновый нагрудник
+item.ruby_legs.name=Рубиновые поножи
+item.ruby_boots.name=Рубиновые ботинки
+
+item.sapphire_sword.name=Сапфировый меч
+item.sapphire_pickaxe.name=Сапфировая кирка
+item.sapphire_axe.name=Сапфировый топор
+item.sapphire_shovel.name=Сапфировая лопата
+item.sapphire_hoe.name=Сапфировая мотыга
+item.sapphire_helmet.name=Сапфировый шлем
+item.sapphire_plate.name=Сапфировый нагрудник
+item.sapphire_legs.name=Сапфировые поножи
+item.sapphire_boots.name=Сапфировые ботинки
+
+item.emerald_sword.name=Изумрудный меч
+item.emerald_pickaxe.name=Изумрудная кирка
+item.emerald_axe.name=Изумрудный топор
+item.emerald_shovel.name=Изумрудная лопата
+item.emerald_hoe.name=Изумрудная мотыга
+item.emerald_helmet.name=Изумрудный шлем
+item.emerald_plate.name=Изумрудный нагрудник
+item.emerald_legs.name=Изумрудные поножи
+item.emerald_boots.name=Изумрудные ботинки
+
+item.ender_sword.name=Эндер-меч
+item.ender_pickaxe.name=Эндер-кирка
+item.ender_axe.name=Эндер-топор
+item.ender_shovel.name=Эндер-лопата
+item.ender_hoe.name=Эндер-мотыга
+item.ender_helmet.name=Эндер-шлем
+item.ender_plate.name=Эндер-нагрудник
+item.ender_legs.name=Эндер-поножи
+item.ender_boots.name=Эндер-ботинки
+
+item.gravel_pickaxe.name=Кирка из гравия
+item.gravel_sword.name=Меч из гравия
+item.gravel_axe.name=Топор из гравия
+item.gravel_shovel.name=Лопата из гравия
+item.gravel_hoe.name=Мотыга из гравия
+
+item.pGold_pickaxe.name=Кирка очищения
+item.pGold_sword.name=Меч очищения
+item.pGold_axe.name=Топор очищения
+item.pGold_shovel.name=Лопата очищения
+item.pGold_hoe.name=Мотыга очищения
+
+item.scuba_helmet.name=Водолазный шлем
+item.scuba_plate.name=Водолазный нагрудник
+item.scuba_legs.name=Водолазные поножи
+item.scuba_boots.name=Водолазные ботинки
+
+item.guard_helmet.name=Охраняющий шлем
+item.guard_plate.name=Охраняющий нагрудник
+item.guard_legs.name=Охраняющие поножи
+item.guard_boots.name=Охраняющие ботинки
+
+item.scorched_helmet.name=Опалённый шлем
+item.scorched_plate.name=Опалённый нагрудник
+item.scorched_legs.name=Опалённые поножи
+item.scorched_boots.name=Опалённые ботинки
+
+achievement.cookedFlesh=Вкусная плоть!
+achievement.cookedFlesh.desc=Приготовить гнилую плоть
+
+achievement.seasonedFlesh=Сервированная плоть!
+achievement.seasonedFlesh.desc=Обжарить приготовленную плоть
+
+achievement.enchantedDust=Мудрая пудра!
+achievement.enchantedDust.desc=Добыть чарующую пыль
+
+achievement.enchantedGem=Основы
+achievement.enchantedGem.desc=Создать чарующий кристалл
+
+achievement.magmaSword=Огонь и Меч!
+achievement.magmaSword.desc=Создать магмовый меч
+
+achievement.inkSword=Токсичное оружие!
+achievement.inkSword.desc=Создать чернильный меч
+
+achievement.airborneSword=Меч, рождённый воздухом!
+achievement.airborneSword.desc=Создать воздушный меч
+
+achievement.xpBottle=Новый уровень!
+achievement.xpBottle.desc=Создать усилитель опыта с помощью чарующей пыли
+
+achievement.beehorseSword=Могучие пчёлы!
+achievement.beehorseSword.desc=Получить могучий Пчелиный меч!
