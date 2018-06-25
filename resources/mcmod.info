@@ -1,0 +1,16 @@
+[
+{
+  "modid": "examplemod",
+  "name": "VanillaPlus",
+  "description": "Making the useless, useful",
+  "version": "1.4.4",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["gruntpie224"],
+  "credits": "gruntpie224",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

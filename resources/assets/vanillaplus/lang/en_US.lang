@@ -1,0 +1,172 @@
+itemGroup.VanillaPlusBlocks=VanillaPlus Blocks
+itemGroup.VanillaPlusItems=VanillaPlus Items
+
+
+tile.obsidianForced.name=Reinforced Obsidian
+tile.rubyBlock.RubyBlock.name=Ruby Block
+tile.rubyBlock.SapphireBlock.name=Sapphire Block
+tile.rubyBlock.HellStoneBlock.name=HellStone Block
+tile.rubyBlock.ChiseledRuby.name=Chiseled Ruby
+tile.rubyBlock.ChiseledSapphire.name=Chiseled Sapphire
+tile.rubyBlock.ChiseledHellStone.name=Chiseled HellStone
+tile.expTranslatorParticles.name=Exp-Translator Table
+tile.magmaOre.name=Magma Ore
+tile.enderCrystalOreNew.name=EnderCrystal Ore
+tile.hellFireOre.name=Hellfire Ore
+tile.gravelCompact.name=Compacted Gravel
+tile.sapphireOre.name=Sapphire Ore
+tile.rubyOre.name=Ruby Ore
+tile.xpOre.name=Enchanted Ore
+
+item.magmaChunkNew.name=Magma Chunk
+item.enchantedRock.name=Enchanted Dust
+item.enderCrystalNew.name=Ender Crystal
+item.hellStone.name=Hellstone
+item.enderCrystalCorruptedNew.name=Corrupted Ender Crystal
+item.enderGem.name=Ender Gem
+item.enchantedGem.name=Enchanted Gem
+item.sapphire.name=Sapphire
+item.birchDoorItem.name=Birch Door
+item.jungleDoorItem.name=Jungle Door
+item.spruceDoorItem.name=Spruce Door
+item.acaciaDoorItem.name=Acacia Door
+item.darkOakDoorItem.name=Dark Oak Door
+item.skeletonHeadFrag.name=Skeleton Fragment
+item.zombieHeadFrag.name=Zombie Fragment
+item.creeperHeadFrag.name=Creeper Fragment
+item.gravelClump.name=Flint Compound
+item.goldenFeather.name=Golden Feather
+item.bloatedInkSac.name=Bloated InkSac
+item.airTank.name=Air Tank
+item.guardianIngot.name=Guardian Ingot
+item.purifiedGold.name=Purified Gold
+item.diamondRod.name=Diamond Rod
+item.emptyVial.name=Empty Vial
+item.expVial.name=Exp-Vial
+
+item.cookedFlesh.name=Cooked Flesh
+item.seasonedFlesh.name=Seasoned Flesh
+item.toast.name=Toast
+item.slimeJelly.name=Slime Jelly
+item.slimeSandwich.name=Slime Sandwich
+item.toastedSlimeSandwich.name=Toasted Slime Sandwich
+
+item.rapidBow.name=Rapid Bow
+item.magmaSword.name=Magma Sword
+item.inkSword.name=Ink Sword
+item.enchantedSword.name=Airborne Sword
+item.beeHorseSword.name=BeeHorse Sword
+
+item.obsidianSword.name=Obsidian Sword
+item.obsidianPickaxe.name=Obsidian Pickaxe
+item.obsidianAxe.name=Obsidian Axe
+item.obsidianShovel.name=Obsidian Shovel
+item.obsidianHoe.name=Obsidian Hoe
+item.obsidianHelmet.name=Obsidian Helmet
+item.obsidianPlate.name=Obsidian Chestplate
+item.obsidianLegs.name=Obsidian Leggings
+item.obsidianBoots.name=Obsidian Boots
+
+item.rubySword.name=Ruby Sword
+item.rubyPickaxe.name=Ruby Pickaxe
+item.rubyHatchet.name=Ruby Axe
+item.rubyShovel.name=Ruby Shovel
+item.rubyHoe.name=Ruby Hoe
+item.rubyHelmet.name=Ruby Helmet
+item.rubyPlate.name=Ruby Chestplate
+item.rubyLeggings.name=Ruby Leggings
+item.rubyBoots.name=Ruby Boots
+
+item.sapphireSword.name=Sapphire Sword
+item.sapphirePickaxe.name=Sapphire Pickaxe
+item.sapphireHatchet.name=Sapphire Axe
+item.sapphireShovel.name=Sapphire Shovel
+item.sapphireHoe.name=Sapphire Hoe
+item.sapphireHelmet.name=Sapphire Helmet
+item.sapphirePlate.name=Sapphire Chestplate
+item.sapphireLeggings.name=Sapphire Leggings
+item.sapphireBoots.name=Sapphire Boots
+
+item.emeraldSword.name=Emerald Sword
+item.emeraldPickaxe.name=Emerald Pickaxe
+item.emeraldHatchet.name=Emerald Axe
+item.emeraldShovel.name=Emerald Shovel
+item.emeraldHoe.name=Emerald Hoe
+item.emeraldHelmet.name=Emerald Helmet
+item.emeraldPlate.name=Emerald Chestplate
+item.emeraldLegs.name=Emerald Leggings
+item.emeraldBoots.name=Emerald Boots
+
+item.enderSword.name=Ender Sword
+item.enderPickaxe.name=Ender Pickaxe
+item.enderAxe.name=Ender Axe
+item.enderShovel.name=Ender Shovel
+item.enderHoe.name=Ender Hoe
+item.enderHelmet.name=Ender Helmet
+item.enderPlate.name=Ender Chestplate
+item.enderLegs.name=Ender Leggings
+item.enderBoots.name=Ender Boots
+
+item.gravelPickaxe.name=Gravel Pickaxe
+item.gravelSword.name=Gravel Sword
+item.gravelHatchet.name=Gravel Axe
+item.gravelShovel.name=Gravel Shovel
+item.gravelHoe.name=Gravel Hoe
+
+item.purifiedPickaxe.name=Purified Pickaxe
+item.purifiedSword.name=Purified Sword
+item.purifiedHatchet.name=Purified Axe
+item.purifiedShovel.name=Purified Shovel
+item.purifiedHoe.name=Purified Hoe
+
+item.scubaHelmet.name=Scuba Helmet
+item.scubaTank.name=Scuba Chestplate
+item.scubaPants.name=Scuba Leggings
+item.scubaFlippers.name=Scuba Boots
+
+item.guardianHelmet.name=Guardian Helmet
+item.guardianChestplate.name=Guardian Chestplate
+item.guardianLegs.name=Guardian Leggings
+item.guardianBoots.name=Guardian Boots
+
+item.scorchedHelmet.name=Scorched Helmet
+item.scorchedPlate.name=Scorched Chestplate
+item.scorchedLegs.name=Scorched Leggings
+item.scorchedBoots.name=Scorched Boots
+
+achievement.cookedFlesh=Flesh Cooked!
+achievement.cookedFlesh.desc=Cook rotten flesh
+
+achievement.seasonedFlesh=Flesh Seasoned!
+achievement.seasonedFlesh.desc=Season cooked flesh
+
+achievement.enchantedDust=Powder of Power!
+achievement.enchantedDust.desc=Mine up some Enchanted Dust
+
+achievement.enchantedGem=The Essential
+achievement.enchantedGem.desc=Craft an Enchanted Gem
+
+achievement.magmaSword=Sword of Flames!
+achievement.magmaSword.desc=Craft a magma sword
+
+achievement.inkSword=Sword of Toxins!
+achievement.inkSword.desc=Craft an ink sword
+
+achievement.airborneSword=Sword of Wind!
+achievement.airborneSword.desc=Craft an airborne sword
+
+achievement.xpBottle=Level Up!
+achievement.xpBottle.desc=Craft an experience bottle with enchanted dust
+
+achievement.beehorseSword=The Mighty BeeHorse!
+achievement.beehorseSword.desc=Obtain the mighty BeeHorse Sword!
+
+achievement.expTran=Level Banker!
+achievement.expTran.desc=Craft an Exp-Translator Table
+
+achievement.expVial=Level Stored!
+achievement.expVial.desc=Store some exp with an empty vial
+
+achievement.emptyVial=Level Taken!
+achievement.emptyVial.desc=Gain some exp with an exp vial
+
