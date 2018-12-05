@@ -1,0 +1,153 @@
+itemGroup.VanillaPlus=VanillaPlus
+
+
+tile.obsidian_reinforced.name=Obsidiana Reforzada
+ruby_block.name=Bloque de Ruby
+sapphire_block.name=Bloque de Zafiro
+hellstone_block.name=Piedra Del infierno
+ruby_special_block.name=Ruby Cincelado
+sapphire_special_block.name=Zafiro Cincelado
+hellstone_special_block.name=Piedra del infierno Cincelado
+tile.magma_ore.name=Mineral de Magma
+tile.ender_crystal_ore.name=Mineral
+tile.hellfire_ore.name=Mineral de Fuego
+tile.compact_gravel.name=Gravilla Compactada
+tile.sapphire_ore.name=Mineral de Zafiro
+tile.ruby_ore.name=Mineral de Ruby
+tile.enchanted_ore.name=Mineral Encantado
+
+item.magma_chunk.name=Pedazo de Magma
+item.enchanted_dust.name=Polvo Encantado
+item.ender_crystal.name=Cristal de Ender
+item.hell_stone.name=Piedra del infierno
+item.ender_crystal_corrupt.name=Corrupted Ender Crystal
+item.ender_gem.name=Gema de Ender
+item.enchanted_gem.name=Gema Encantada
+item.sapphire.name=Zafiro
+item.head_frag_skeleton.name=Fragmento de Esqueleto
+item.head_frag_zombie.name=Fragmento de Zombi
+item.head_frag_creeper.name=Fragmento de Creeper
+item.gravel_clump.name=Pedernal Compuesto
+item.golden_feather.name=Pluma de Oro
+item.bloated_ink.name=Saco de tinta hinchada
+item.air_tank.name=Tanque de Oxigeno
+item.guardian_ingot.name=Guardian Ingot
+item.purified_gold.name=Oro Purificado
+item.diamond_rod.name=Palo de Diamante
+item.slime_jelly.name=Jalea de limo
+
+item.cooked_flesh.name=Carne Podrida Cocinada
+item.seasoned_flesh.name=Carne podrida Sasonada
+item.toast.name=Pan Tostado
+item.slime_sandwich.name=Sandwich de limo
+item.slime_sandwich_toasted.name=Sandwich de limo tostado
+
+item.rapid_bow.name=Arco Vel�z
+item.magma_sword.name=Espada de magma
+item.ink_sword.name=Espada de tinta
+item.air_sword.name=Espada de Viento
+item.bee_sword.name=Espada de Abeja
+
+item.obsidian_sword.name=Espada de Obsidiana
+item.obsidian_pickaxe.name=Pico de Obsidiana
+item.obsidian_axe.name=Hacha de Obsidiana
+item.obsidian_shovel.name=Pala de Obsidiana
+item.obsidian_hoe.name=Azadon de Obsidiana
+item.obsidian_helmet.name=Casco de Obsidiana
+item.obsidian_plate.name=Pechera de Obsidiana
+item.obsidian_legs.name=Pantalones de Obsidiana
+item.obsidian_boots.name=Botas de Obsidiana
+
+item.ruby_sword.name=Espada de Ruby
+item.ruby_pickaxe.name=Pico de Ruby
+item.ruby_axe.name=Hacha de Ruby
+item.ruby_shovel.name=Pala de Ruby
+item.ruby_hoe.name=Azadon de Ruby
+item.ruby_helmet.name=Casco de Ruby
+item.ruby_plate.name=Pechera de Ruby
+item.ruby_legs.name=Pantalones de Ruby
+item.ruby_boots.name=Botas de Ruby
+
+item.sapphire_sword.name=Espada de Zafiro
+item.sapphire_pickaxe.name=Pico de Zafiro
+item.sapphire_axe.name=Hacha de Zafiro
+item.sapphire_shovel.name=Pala de Zafiro
+item.sapphire_hoe.name=Azadon de Zafiro
+item.sapphire_helmet.name=Casco de Zafiro
+item.sapphire_plate.name=Pechera de Zafiro
+item.sapphire_legs.name=Pantalon de Zafiro
+item.sapphire_boots.name=Botas de Zafiro
+
+item.emerald_sword.name=Espada de Esmeralda
+item.emerald_pickaxe.name=Pico de Esmeralda
+item.emerald_axe.name=Hacha de Esmeralda
+item.emerald_shovel.name=Pala de Esmeralda
+item.emerald_hoe.name=Azadon de Esmeralda
+item.emerald_helmet.name=Casco de Esmeralda
+item.emerald_plate.name=Pechera de Esmeralda
+item.emerald_legs.name=Pantalon de Esmeralda
+item.emerald_boots.name=Botas de Esmeralda
+
+item.ender_sword.name=Espada de Ender
+item.ender_pickaxe.name=Pico de Ender
+item.ender_axe.name=Hacha de Ender
+item.ender_shovel.name=Pala de Ender
+item.ender_hoe.name=Azadon de Ender
+item.ender_helmet.name=Casco de Ender
+item.ender_plate.name=Pechera de Ender
+item.ender_legs.name=Pantalones de Ender
+item.ender_boots.name=Botas de Ender
+
+item.gravel_pickaxe.name=Pico de Gravilla
+item.gravel_sword.name=Espada de Gravilla
+item.gravel_axe.name=Hacha de Gravilla
+item.gravel_shovel.name=Pala de Gravilla
+item.gravel_hoe.name=Azadon de Gravilla
+
+item.pGold_pickaxe.name=Pico Purificado
+item.pGold_sword.name=Espada Purificada
+item.pGold_axe.name=Hacha Purificada
+item.pGold_shovel.name=Pala Purificada
+item.pGold_hoe.name=Azadon Purificado
+
+item.scuba_helmet.name=Casco de Buceo
+item.scuba_plate.name=Pechera de Buceo
+item.scuba_legs.name=Pantalones de Buceo
+item.scuba_boots.name=Botas de Buceo
+
+item.guard_helmet.name=Casco del Guardian
+item.guard_plate.name=Pechera del Guardian
+item.guard_legs.name=Pantalones del Guardian
+item.guard_boots.name=Botas del Guardian
+
+item.scorched_helmet.name=Scorched Helmet
+item.scorched_plate.name=Scorched Chestplate
+item.scorched_legs.name=Scorched Leggings
+item.scorched_boots.name=Scorched Boots
+
+achievement.cookedFlesh=Carne podrida cocinada!
+achievement.cookedFlesh.desc=Cocine la carne podrida
+
+achievement.seasonedFlesh=Carne podrida Sasonada!
+achievement.seasonedFlesh.desc=Sasona la carne podrida
+
+achievement.enchantedDust=Polvo de Poder!
+achievement.enchantedDust.desc=Mina algunos Polvos Encantados
+
+achievement.enchantedGem=El esencial
+achievement.enchantedGem.desc=Craftea una Gema Encantada
+
+achievement.magmaSword=Espada de magma!
+achievement.magmaSword.desc=Craftea una Espada de Magma
+
+achievement.inkSword=Espada de Veneno!
+achievement.inkSword.desc=Craftea una Espada de Tinta
+
+achievement.airborneSword=Espada del Viento!
+achievement.airborneSword.desc=Craftea una Espada de Viento
+
+achievement.xpBottle=Nivel Subido!
+achievement.xpBottle.desc=Craftea una botella de experiencia con el polvo encantado
+
+achievement.beehorseSword=The Mighty BeeHorse!
+achievement.beehorseSword.desc=Obtain the mighty BeeHorse Sword!
