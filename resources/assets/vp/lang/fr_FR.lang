@@ -1,0 +1,154 @@
+itemGroup.VanillaPlus=VanillaPlus
+
+
+
+tile.obsidian_reinforced.name=Obsidienne Renforcée
+ruby_block.name=Bloc de Rubis
+sapphire_block.name=Bloc de Sapphire
+hellstone_block.name=Bloc de Pierre de l'enfer
+ruby_special_block.name=Rubis Sculpté
+sapphire_special_block.name=Sapphire Sculpté
+hellstone_special_block.name=Pierre de l'enfer Sculptée
+tile.magma_ore.name=Minerai de Magma
+tile.ender_crystal_ore.name=Minerai de Crystal de l'ender
+tile.hellfire_ore.name=Minerai du feu de l'enfer
+tile.compact_gravel.name=Gravier compact
+tile.sapphire_ore.name=Minerai de Sapphire
+tile.ruby_ore.name=Minerai de Rubis
+tile.enchanted_ore.name=Minerai Enchanté
+
+item.magma_chunk.name=Morceau de Magma
+item.enchanted_dust.name=Poussière enchantée
+item.ender_crystal.name=Crystal de l'ender
+item.hell_stone.name=Pierre de l'enfer
+item.ender_crystal_corrupt.name=Crystal de l'ender Corrompu
+item.ender_gem.name=Gemme de l'ender
+item.enchanted_gem.name=Gemme enchantée
+item.sapphire.name=Sapphire
+item.head_frag_skeleton.name=Fragment de Squelette
+item.head_frag_zombie.name=Fragment de Zombie
+item.head_frag_creeper.name=Fragment de Creeper
+item.gravel_clump.name=Silex Compressé
+item.golden_feather.name=Plume Dorée
+item.bloated_ink.name=Sac d'encre Compressé
+item.air_tank.name=Réservoir d'Air
+item.guardian_ingot.name=Lingot de Gardien
+item.purified_gold.name=Or Purifié
+item.diamond_rod.name=Barre en Diamant
+item.slime_jelly.name=Gelée de Slime
+
+item.cooked_flesh.name=Chair Purifiée
+item.seasoned_flesh.name=Chair Assisonnée
+item.toast.name=Toast
+item.slime_sandwich.name=Sandwich de Slime
+item.slime_sandwich_toasted.name=Sandwich de Slime Toasté
+
+item.rapid_bow.name=Arc Rapide
+item.magma_sword.name=Épée de Magma
+item.ink_sword.name=Épée d'encre
+item.air_sword.name=Épée de l'envol
+item.bee_sword.name=Épée du Cheval-Abeille
+
+item.obsidian_sword.name=Épée en Obsidienne
+item.obsidian_pickaxe.name=Pioche en Obsidienne
+item.obsidian_axe.name=Hache en Obsidienne
+item.obsidian_shovel.name=Pelle en Obsidienne
+item.obsidian_hoe.name=Houe en Obsidienne
+item.obsidian_helmet.name=Casque en Obsidienne
+item.obsidian_plate.name=Plastron en Obsidienne
+item.obsidian_legs.name=Jambières en Obsidienne
+item.obsidian_boots.name=Bottes en Obsidienne
+
+item.ruby_sword.name=Épée en Rubis
+item.ruby_pickaxe.name=Pioche en Rubis
+item.ruby_axe.name=Hache en Rubis
+item.ruby_shovel.name=Pelle en Rubis
+item.ruby_hoe.name=Houe en Rubis
+item.ruby_helmet.name=Casque en Rubis
+item.ruby_plate.name=Plastron en Rubis
+item.ruby_legs.name=Jambières en Rubis
+item.ruby_boots.name=Bottes en Rubis
+
+item.sapphire_sword.name=Épée en Sapphire
+item.sapphire_pickaxe.name=Pioche en Sapphire
+item.sapphire_axe.name=Hache en Sapphire
+item.sapphire_shovel.name=Pelle en Sapphire
+item.sapphire_hoe.name=Houe en Sapphire
+item.sapphire_helmet.name=Casque en Sapphire
+item.sapphire_plate.name=Plastron en Sapphire
+item.sapphire_legs.name=Jambières en Sapphire
+item.sapphire_boots.name=Bottes en Sapphire
+
+item.emerald_sword.name=Épée en Émeraude
+item.emerald_pickaxe.name=Pioche en Émeraude
+item.emerald_axe.name=Hache en Émeraude
+item.emerald_shovel.name=Pelle en Émeraude
+item.emerald_hoe.name=Houe en Émeraude
+item.emerald_helmet.name=Casque en Émeraude
+item.emerald_plate.name=Plastron en Émeraude
+item.emerald_legs.name=Jambières en Émeraude
+item.emerald_boots.name=Bottes en Émeraude
+
+item.ender_sword.name=Épée de l'end
+item.ender_pickaxe.name=Pioche de l'end
+item.ender_axe.name=Hache de l'end
+item.ender_shovel.name=Pelle de l'end
+item.ender_hoe.name=Houe de l'end
+item.ender_helmet.name=Casque de l'end
+item.ender_plate.name=Plastron de l'end
+item.ender_legs.name=Jambières de l'end
+item.ender_boots.name=Bottes de l'end
+
+item.gravel_pickaxe.name=Pioche en Gravier
+item.gravel_sword.name=Épée en Gravier
+item.gravel_axe.name=Hache en Gravier
+item.gravel_shovel.name=Pelle en Gravier
+item.gravel_hoe.name=Houe en Gravier
+
+item.pGold_pickaxe.name=Pioche Purifiée
+item.pGold_sword.name=Épée Purifiée
+item.pGold_axe.name=Hache Purifiée
+item.pGold_shovel.name=Pelle Purifiée
+item.pGold_hoe.name=Houe Purifiée
+
+item.scuba_helmet.name=Casque Sous-marin
+item.scuba_plate.name=Plastron Sous-marin
+item.scuba_legs.name=Jambières Sous-marines
+item.scuba_boots.name=Bottes Sous-marines
+
+item.guard_helmet.name=Casque du Gardien
+item.guard_plate.name=Plastron du Gardien
+item.guard_legs.name=Jambières du Gardien
+item.guard_boots.name=Bottes du Gardien
+
+item.scorched_helmet.name=Casque Enflammé
+item.scorched_plate.name=Plastron Enflammé
+item.scorched_legs.name=Jambières Enflammées
+item.scorched_boots.name=Bottes Enflammés
+
+achievement.cookedFlesh=Chair cuite!
+achievement.cookedFlesh.desc=Cuit de la chair putréfiée
+
+achievement.seasonedFlesh=Chair assaisonée!
+achievement.seasonedFlesh.desc=Épice de la chair cuite
+
+achievement.enchantedDust=Poudre de la puissance!
+achievement.enchantedDust.desc=Mine de la poussière enchantée
+
+achievement.enchantedGem=L'essentiel
+achievement.enchantedGem.desc=Fabrique une gemme enchantée
+
+achievement.magmaSword=Épée des flames!
+achievement.magmaSword.desc=Fabrique une epée de magma
+
+achievement.inkSword=Épée toxique!
+achievement.inkSword.desc=Fabrique une épée d'encre
+
+achievement.airborneSword=Épée du vent!
+achievement.airborneSword.desc=Fabrique une épée de l'envol
+
+achievement.xpBottle=Niveau supérieur!
+achievement.xpBottle.desc=Fabrique une bouteille d'expérience avec de la poussière enchantée
+
+achievement.beehorseSword=Le grand cheval-abeille!
+achievement.beehorseSword.desc=Obtien la grand epée du cheval-abeille!
