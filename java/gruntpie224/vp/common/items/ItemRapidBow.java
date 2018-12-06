@@ -14,6 +14,8 @@ import net.minecraft.item.ItemArrow;
 import net.minecraft.item.ItemBow;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.StatList;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.world.World;
@@ -25,6 +27,8 @@ public class ItemRapidBow extends ItemBow {
         setMaxDamage(480);
         setCreativeTab(VanillaPlus.vanillaPlusTabs);
     }
+
+
     private ItemStack findAmmo(EntityPlayer player)
     {
         if (this.isArrow(player.getHeldItem(EnumHand.OFF_HAND)))
@@ -49,6 +53,18 @@ public class ItemRapidBow extends ItemBow {
 
             return ItemStack.EMPTY;
         }
+    }
+    public static float getArrowVelocity(int charge)
+    {
+        float f = (float)charge / 10.0F;
+        f = (f * f + f * 1.0F) / 3.0F;
+
+        if (f > 1.0F)
+        {
+            f = 1.0F;
+        }
+
+        return f;
     }
 
     protected boolean isArrow(ItemStack stack)
@@ -95,19 +111,21 @@ public class ItemRapidBow extends ItemBow {
 
                         if (j > 0)
                         {
-                            entityarrow.setDamage(entityarrow.getDamage() + (double)j * 0.5D + 0.5D);
+                            entityarrow.setDamage(entityarrow.getDamage() + (double)j * 2.5D + 1.5D);
+                            stack.damageItem(9, entityplayer);
+
                         }
 
                         int k = EnchantmentHelper.getEnchantmentLevel(Enchantments.PUNCH, stack);
 
                         if (k > 0)
                         {
-                            entityarrow.setKnockbackStrength(k);
+                            entityarrow.setKnockbackStrength(k+2);
                         }
 
                         if (EnchantmentHelper.getEnchantmentLevel(Enchantments.FLAME, stack) > 0)
                         {
-                            entityarrow.setFire(100);
+                            entityarrow.setFire(150);
                         }
 
                         stack.damageItem(1, entityplayer);
@@ -140,5 +158,33 @@ public class ItemRapidBow extends ItemBow {
     public EnumAction getItemUseAction(ItemStack stack)
     {
         return EnumAction.BOW;
+    }
+
+    @Override
+    public int getItemEnchantability() {
+        return 1;
+    }
+    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn)
+    {
+        ItemStack itemstack = playerIn.getHeldItem(handIn);
+        boolean flag = !this.findAmmo(playerIn).isEmpty();
+
+        ActionResult<ItemStack> ret = net.minecraftforge.event.ForgeEventFactory.onArrowNock(itemstack, worldIn, playerIn, handIn, flag);
+        if (ret != null) return ret;
+
+        if (!playerIn.capabilities.isCreativeMode && !flag)
+        {
+            return flag ? new ActionResult(EnumActionResult.PASS, itemstack) : new ActionResult(EnumActionResult.FAIL, itemstack);
+        }
+        else
+        {
+            playerIn.setActiveHand(handIn);
+            return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
+        }
+    }
+
+    @Override
+    public int getMaxItemUseDuration(ItemStack stack) {
+        return 72000;
     }
 }

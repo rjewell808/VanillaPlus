@@ -2,17 +2,27 @@ package gruntpie224.vp.init;
 
 import com.google.common.base.Strings;
 import gruntpie224.vp.VPConst;
-import gruntpie224.vp.common.items.ItemBasic;
-import gruntpie224.vp.common.items.ItemVPFood;
+import gruntpie224.vp.common.armor.*;
+import gruntpie224.vp.common.items.*;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemModelMesher;
+import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.init.Items;
 import net.minecraft.init.SoundEvents;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class VPItems {
 
@@ -139,7 +149,7 @@ public class VPItems {
     public static Item ender_legs;
     public static Item ender_boots;
 
-    //TOOL STATS --------------------------------------------------(NAME, HARVESTLVL, MAXUSE, EFF, DMG, ENCHANT)
+    //TOOL STATS
     public static ToolMaterial toolObsidian = EnumHelper.addToolMaterial("OBSIDIAN", 4, 2500, 7.0F, 3, 8);
     public static ToolMaterial toolEmerald = EnumHelper.addToolMaterial("EMERALD", 4, 450, 20.0F, 3, 12);
     public static ToolMaterial toolMagma = EnumHelper.addToolMaterial("MAGMA", 3, 500, 7.0F, 3, 15);
@@ -165,7 +175,7 @@ public class VPItems {
 
     public static void init(){
 
-        //Basic
+       
         enchanted_gem = new ItemBasic().setUnlocalizedName("enchanted_gem");
         enchanted_dust = new ItemBasic(true).setUnlocalizedName("enchanted_dust");
         magma_chunk = new ItemBasic().setUnlocalizedName("magma_chunk");
@@ -186,12 +196,99 @@ public class VPItems {
         purified_gold = new ItemBasic().setUnlocalizedName("purified_gold");
         diamond_rod = new ItemBasic().setUnlocalizedName("diamond_rod");
         slime_jelly = new ItemBasic().setUnlocalizedName("slime_jelly");
-        //Food
+        
         cooked_flesh = new ItemVPFood(4,0.1f,true).setUnlocalizedName("cooked_flesh");
         seasoned_flesh = new ItemVPFood(6,0.1f,true).setUnlocalizedName("seasoned_flesh");
         toast=new ItemVPFood(6,0.1F,false).setUnlocalizedName("toast");
         slime_sandwich = new ItemVPFood(15, 0.1F, false).setUnlocalizedName("slime_sandwich");
         slime_sandwich_toasted = new ItemVPFood(17, 0.1F, false).setUnlocalizedName("slime_sandwich_toasted");
+    
+        rapid_bow = new ItemRapidBow().setUnlocalizedName("rapid_bow");
+        magma_sword=new ItemMagmaSword(toolMagma).setUnlocalizedName("magma_sword");
+        air_sword=new ItemAirSword(toolAir).setUnlocalizedName("air_sword");
+        ink_sword = new ItemInkSword(toolAir).setUnlocalizedName("ink_sword");
+        bee_sword = new ItemBeeSword(toolbHorseSuper).setUnlocalizedName("bee_sword");
+
+        obsidian_pickaxe = new ItemBasicPickaxe(toolObsidian,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_pickaxe");
+        obsidian_shovel = new ItemBasicShovel(toolObsidian,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_shovel");
+        obsidian_sword = new ItemBasicSword(toolObsidian,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_sword");
+        obsidian_axe = new ItemBasicAxe(toolObsidian,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_axe");
+        obsidian_hoe = new ItemBasicHoe(toolObsidian,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_hoe");
+        obsidian_helmet = new ArmorObsidian(armorObsidian, 0,  "obsidian", EntityEquipmentSlot.HEAD,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_helmet");
+        obsidian_plate = new ArmorObsidian(armorObsidian, 0,  "obsidian",EntityEquipmentSlot.CHEST,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_plate");
+        obsidian_legs = new ArmorObsidian(armorObsidian, 0,  "obsidian",EntityEquipmentSlot.LEGS,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_legs");
+        obsidian_boots = new ArmorObsidian(armorObsidian, 0,  "obsidian",EntityEquipmentSlot.FEET,Item.getItemFromBlock(VPBlocks.obsidian_reinforced)).setUnlocalizedName("obsidian_boots");
+
+        emerald_pickaxe = new ItemBasicPickaxe(toolEmerald,Items.EMERALD).setUnlocalizedName("emerald_pickaxe");
+        emerald_shovel = new ItemBasicShovel(toolEmerald,Items.EMERALD).setUnlocalizedName("emerald_shovel");
+        emerald_sword = new ItemBasicSword(toolEmerald,Items.EMERALD).setUnlocalizedName("emerald_sword");
+        emerald_axe = new ItemBasicAxe(toolEmerald,Items.EMERALD).setUnlocalizedName("emerald_axe");
+        emerald_hoe = new ItemBasicHoe(toolEmerald,Items.EMERALD).setUnlocalizedName("emerald_hoe");
+        emerald_helmet = new ArmorEmerald(armorEmerald, 0,  "emerald",EntityEquipmentSlot.HEAD, Items.EMERALD).setUnlocalizedName("emerald_helmet");
+        emerald_plate = new ArmorEmerald(armorEmerald, 0,  "emerald",EntityEquipmentSlot.CHEST,Items.EMERALD).setUnlocalizedName("emerald_plate");
+        emerald_legs = new ArmorEmerald(armorEmerald, 0,  "emerald",EntityEquipmentSlot.LEGS,Items.EMERALD).setUnlocalizedName("emerald_legs");
+        emerald_boots = new ArmorEmerald(armorEmerald, 0,  "emerald",EntityEquipmentSlot.FEET,Items.EMERALD).setUnlocalizedName("emerald_boots");
+
+        ruby_pickaxe = new ItemBasicPickaxe( toolRuby,ruby).setUnlocalizedName("ruby_pickaxe");
+        ruby_shovel = new ItemBasicShovel(toolRuby,ruby).setUnlocalizedName("ruby_shovel");
+        ruby_sword = new ItemBasicSword(toolRuby,ruby).setUnlocalizedName("ruby_sword");
+        ruby_axe = new ItemBasicAxe(toolRuby,ruby).setUnlocalizedName("ruby_axe");
+        ruby_hoe = new ItemBasicHoe(toolRuby,ruby).setUnlocalizedName("ruby_hoe");
+        ruby_helmet = new ArmorRuby(armorRuby, 0, 0, "ruby",ruby).setUnlocalizedName("ruby_helmet");
+        ruby_plate = new ArmorRuby(armorRuby,0, 1, "ruby",ruby).setUnlocalizedName("ruby_plate");
+        ruby_legs = new ArmorRuby(armorRuby,0, 2, "ruby",ruby).setUnlocalizedName("ruby_legs");
+        ruby_boots = new ArmorRuby(armorRuby, 0, 3, "ruby",ruby).setUnlocalizedName("ruby_boots");
+
+        sapphire_pickaxe = new ItemBasicPickaxe(toolSapphire,sapphire).setUnlocalizedName("sapphire_pickaxe");
+        sapphire_shovel = new ItemBasicShovel(toolSapphire,sapphire).setUnlocalizedName("sapphire_shovel");
+        sapphire_sword = new ItemBasicSword(toolSapphire,sapphire).setUnlocalizedName("sapphire_sword");
+        sapphire_axe = new ItemBasicAxe(toolSapphire,sapphire).setUnlocalizedName("sapphire_axe");
+        sapphire_hoe = new ItemBasicHoe(toolSapphire,sapphire).setUnlocalizedName("sapphire_hoe");
+        sapphire_helmet = new ArmorRuby(armorSapphire, 0, 0, "sapphire",sapphire).setUnlocalizedName("sapphire_helmet");
+        sapphire_plate = new ArmorRuby(armorSapphire, 0, 1, "sapphire",sapphire).setUnlocalizedName("sapphire_plate");
+        sapphire_legs = new ArmorRuby(armorSapphire, 0, 2, "sapphire",sapphire).setUnlocalizedName("sapphire_legs");
+        sapphire_boots = new ArmorRuby(armorSapphire, 0, 3, "sapphire",sapphire).setUnlocalizedName("sapphire_boots");
+
+        gravel_pickaxe = new ItemBasicPickaxe(toolGravel,Item.getItemFromBlock(VPBlocks.compact_gravel)).setUnlocalizedName("gravel_pickaxe");
+        gravel_shovel = new ItemBasicShovel(toolGravel,Item.getItemFromBlock(VPBlocks.compact_gravel)).setUnlocalizedName("gravel_shovel");
+        gravel_sword = new ItemBasicSword(toolGravel,Item.getItemFromBlock(VPBlocks.compact_gravel)).setUnlocalizedName("gravel_sword");
+        gravel_axe = new ItemBasicAxe(toolGravel,Item.getItemFromBlock(VPBlocks.compact_gravel)).setUnlocalizedName("gravel_axe");
+        gravel_hoe = new ItemBasicHoe(toolGravel,Item.getItemFromBlock(VPBlocks.compact_gravel)).setUnlocalizedName("gravel_hoe");
+
+        guard_helmet = new ArmorGuard(armorGuardian, 0, 0, "guardian").setUnlocalizedName("guard_helmet");
+        guard_plate = new ArmorGuard(armorGuardian, 0, 1, "guardian").setUnlocalizedName("guard_plate");
+        guard_legs = new ArmorGuard(armorGuardian, 0, 2, "guardian").setUnlocalizedName("guard_legs");
+        guard_boots = new ArmorGuard(armorGuardian, 0, 3, "guardian").setUnlocalizedName("guard_boots");
+
+        pGold_pickaxe = new ItemBasicPickaxe(toolpGold,purified_gold).setUnlocalizedName("pGold_pickaxe");
+        pGold_shovel = new ItemBasicShovel(toolpGold,purified_gold).setUnlocalizedName("pGold_shovel");
+        pGold_sword = new ItemBasicSword(toolpGold,purified_gold).setUnlocalizedName("pGold_sword");
+        pGold_axe = new ItemBasicAxe(toolpGold,purified_gold).setUnlocalizedName("pGold_axe");
+        pGold_hoe = new ItemBasicHoe(toolpGold,purified_gold).setUnlocalizedName("pGold_hoe");
+
+        ender_sword = new ItemBasicSword(toolEnder,ender_gem).setUnlocalizedName("ender_sword");
+        ender_pickaxe = new ItemBasicPickaxe(toolEnder,ender_gem).setUnlocalizedName("ender_pickaxe");
+        ender_axe = new ItemBasicAxe(toolEnder,ender_gem).setUnlocalizedName("ender_axe");
+        ender_shovel = new ItemBasicShovel(toolEnder,ender_gem).setUnlocalizedName("ender_shovel");
+        ender_hoe = new ItemBasicHoe(toolEnder,ender_gem).setUnlocalizedName("ender_hoe");
+        ender_helmet = new ArmorEnder(armorEnder, 0, 0, "ender").setUnlocalizedName("ender_helmet");
+        ender_plate = new ArmorEnder(armorEnder, 0, 1, "ender").setUnlocalizedName("ender_plate");
+        ender_legs = new ArmorEnder(armorEnder, 0, 2, "ender").setUnlocalizedName("ender_legs");
+        ender_boots = new ArmorEnder(armorEnder, 0, 3, "ender").setUnlocalizedName("ender_boots");
+
+        scorched_helmet = new ArmorScorched(armorScorched,0, 0, "scorched").setUnlocalizedName("scorched_helmet");
+        scorched_plate = new ArmorScorched(armorScorched, 0, 1, "scorched").setUnlocalizedName("scorched_plate");
+        scorched_legs = new ArmorScorched(armorScorched, 0, 2, "scorched").setUnlocalizedName("scorched_legs");
+        scorched_boots = new ArmorScorched(armorScorched, 0, 3, "scorched").setUnlocalizedName("scorched_boots");
+
+        scuba_helmet = new ArmorWater(armorWater, 0, 0, "scuba").setUnlocalizedName("scuba_helmet");
+        scuba_plate = new ArmorWater(armorWater, 0, 1, "scuba").setUnlocalizedName("scuba_plate");
+        scuba_legs = new ArmorWater(armorWater, 0, 2, "scuba").setUnlocalizedName("scuba_legs");
+        scuba_boots = new ArmorWater(armorWater, 0, 3, "scuba").setUnlocalizedName("scuba_boots");
+
+
+
+
     }
 
 
@@ -225,6 +322,12 @@ public class VPItems {
         registerItem(slime_sandwich ,slime_sandwich.getUnlocalizedName().substring(5));
         registerItem(slime_sandwich_toasted ,slime_sandwich_toasted.getUnlocalizedName().substring(5));
 
+        registerItem(rapid_bow ,rapid_bow.getUnlocalizedName().substring(5));
+        registerItem(magma_sword ,magma_sword.getUnlocalizedName().substring(5));
+        registerItem(air_sword ,air_sword.getUnlocalizedName().substring(5));
+        registerItem(ink_sword ,ink_sword.getUnlocalizedName().substring(5));
+        registerItem(bee_sword ,bee_sword.getUnlocalizedName().substring(5));
+
 
 
     }
@@ -255,6 +358,11 @@ public class VPItems {
         renderRegister(toast);
         renderRegister(slime_sandwich);
         renderRegister(slime_sandwich_toasted);
+        renderRegister(rapid_bow);
+        renderRegister(magma_sword);
+        renderRegister(air_sword);
+        renderRegister(ink_sword);
+        renderRegister(bee_sword);
 
     }
 
@@ -274,5 +382,23 @@ public class VPItems {
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(i, 0, new ModelResourceLocation(
                 VPConst.MODID + ":" + i.getUnlocalizedName().substring(5), "inventory"));
 
+    }
+    public static void InitBow(FMLPostInitializationEvent event)
+    {
+        if(event.getSide().isClient())
+        {
+            ModelBakery.registerItemVariants(rapid_bow, new ResourceLocation(VPConst.MODID+":rapid_bow"),new ResourceLocation(VPConst.MODID+":rapid_bow_1"),new ResourceLocation(VPConst.MODID+":rapid_bow_2"),new ResourceLocation(VPConst.MODID+":rapid_bow_3"));
+
+            registerItem(rapid_bow, 0, VPConst.MODID  + ":rapid_bow");
+            registerItem(rapid_bow, 1, VPConst.MODID  + ":rapid_bow_1");
+            registerItem(rapid_bow, 2, VPConst.MODID  + ":rapid_bow_2");
+            registerItem(rapid_bow, 3, VPConst.MODID  + ":rapid_bow_3");
+        }
+    }
+    @SideOnly(Side.CLIENT)
+    public static void registerItem(Item item, int metadata, String itemName)
+    {
+        ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
+        mesher.register(item, metadata, new ModelResourceLocation(itemName, "inventory"));
     }
 }

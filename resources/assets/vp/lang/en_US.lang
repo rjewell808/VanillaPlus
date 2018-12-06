@@ -3,14 +3,15 @@ itemGroup.VanillaPlus=VanillaPlus
 
 
 vp.food.fills=Fills Hunger:
-vp.air_damage=Air Damage
+vp.air_damage=+Air Damage
 vp.bee.text.1=It's a Bee the Size of a Horse
 vp.bee.text.2=First Strike Does Tons of Damage
-vp.bee.text.3=Poison
+vp.bee.text.3=+Poison
 vp.bee.text.4=It's really a Stone Sword
-vp.magma.1=Fire Damage
-vp.magma.2=Right-Click for F&S
-vp.magma.3=-3 Duribility Per F&S
+vp.ink.text=+Wither Damage
+vp.magma.1=+Fire Damage
+vp.magma.2=Right-Click for fire
+vp.magma.3=-3 Duribility after Click
 
 tile.ruby_ore.name=Ruby Ore
 tile.sapphire_ore.name=Sapphire Ore

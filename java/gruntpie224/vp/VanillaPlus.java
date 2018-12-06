@@ -51,7 +51,9 @@ public class VanillaPlus {
     }
     @Mod.EventHandler
     public  void postInit(FMLPostInitializationEvent e){
+
         proxy.registerRenderObject();
+        VPItems.InitBow(e);
     }
 
 
