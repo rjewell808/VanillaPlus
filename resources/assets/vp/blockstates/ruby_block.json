@@ -1,0 +1,10 @@
+{
+    "variants": {
+           "variant=ruby": { "model": "vp:ruby_block_ruby"},
+           "variant=sapphire": { "model": "vp:ruby_block_sapphire"},
+		   "variant=hellstone": { "model": "vp:ruby_block_hellstone"},
+           "variant=ruby_special": { "model": "vp:ruby_block_ruby_special"},
+		   "variant=sapphire_special": { "model": "vp:ruby_block_sapphire_special"},
+           "variant=hellstone_special": { "model": "vp:ruby_block_hellstone_special"}
+    }
+}
